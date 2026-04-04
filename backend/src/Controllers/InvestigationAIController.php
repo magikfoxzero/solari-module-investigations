@@ -3,7 +3,7 @@
 namespace NewSolari\Investigations\Controllers;
 
 use NewSolari\Core\Identity\Models\IdentityUser;
-use App\Plugins\Apps\MetaApps\Investigations\InvestigationsPlugin;
+use NewSolari\Investigations\InvestigationsPlugin;
 use NewSolari\Investigations\Models\Investigation;
 use NewSolari\AIService\Contracts\AIServiceInterface;
 use NewSolari\AIService\Exceptions\AIServiceException;
@@ -401,48 +401,48 @@ class InvestigationAIController extends BaseController
      */
     protected const ENTITY_TYPE_MAP = [
         'person' => [
-            'class' => \App\Plugins\Apps\MiniApps\People\Models\Person::class,
+            'class' => \NewSolari\People\Models\Person::class,
             'entity_type' => 'person',
         ],
         'place' => [
-            'class' => \App\Plugins\Apps\MiniApps\Places\Models\Place::class,
+            'class' => \NewSolari\Places\Models\Place::class,
             'entity_type' => 'place',
         ],
         'organization' => [
-            'class' => \App\Plugins\Apps\MiniApps\Entities\Models\Entity::class,
+            'class' => \NewSolari\Entities\Models\Entity::class,
             'entity_type' => 'entity',
         ],
         'event' => [
-            'class' => \App\Plugins\Apps\MiniApps\Events\Models\Event::class,
+            'class' => \NewSolari\Events\Models\Event::class,
             'entity_type' => 'event',
         ],
         'hypothesis' => [
-            'class' => \App\Plugins\Apps\MiniApps\Hypotheses\Models\Hypothesis::class,
+            'class' => \NewSolari\Hypotheses\Models\Hypothesis::class,
             'entity_type' => 'hypothesis',
         ],
         'idea' => [
-            'class' => \App\Plugins\Apps\MiniApps\Hypotheses\Models\Hypothesis::class,
+            'class' => \NewSolari\Hypotheses\Models\Hypothesis::class,
             'entity_type' => 'hypothesis',
         ],
         'motive' => [
-            'class' => \App\Plugins\Apps\MiniApps\Motives\Models\Motive::class,
+            'class' => \NewSolari\Motives\Models\Motive::class,
             'entity_type' => 'motive',
         ],
         'object' => [
-            'class' => \App\Plugins\Apps\MiniApps\InventoryObjects\Models\InventoryObject::class,
+            'class' => \NewSolari\InventoryObjects\Models\InventoryObject::class,
             'entity_type' => 'inventory_object',
         ],
         'inventory_object' => [
-            'class' => \App\Plugins\Apps\MiniApps\InventoryObjects\Models\InventoryObject::class,
+            'class' => \NewSolari\InventoryObjects\Models\InventoryObject::class,
             'entity_type' => 'inventory_object',
         ],
         // Default fallback types map to Note
         'concept' => [
-            'class' => \App\Plugins\Apps\MiniApps\Notes\Models\Note::class,
+            'class' => \NewSolari\Notes\Models\Note::class,
             'entity_type' => 'note',
         ],
         'note' => [
-            'class' => \App\Plugins\Apps\MiniApps\Notes\Models\Note::class,
+            'class' => \NewSolari\Notes\Models\Note::class,
             'entity_type' => 'note',
         ],
     ];
@@ -655,7 +655,7 @@ class InvestigationAIController extends BaseController
         // Check if model class exists
         if (!class_exists($modelClass)) {
             // Fallback to Note if entity type not available
-            $modelClass = \App\Plugins\Apps\MiniApps\Notes\Models\Note::class;
+            $modelClass = \NewSolari\Notes\Models\Note::class;
             $entityType = 'note';
             if (!class_exists($modelClass)) {
                 return null;
@@ -889,7 +889,7 @@ class InvestigationAIController extends BaseController
             $user = $access['user'];
 
             // Get the suggestion analysis service
-            $suggestionService = new \App\Plugins\Apps\MetaApps\Investigations\Services\SuggestionAnalysisService(
+            $suggestionService = new \NewSolari\Investigations\Services\SuggestionAnalysisService(
                 $this->getPlugin(),
                 $this->getAIService()
             );
@@ -950,7 +950,7 @@ class InvestigationAIController extends BaseController
             }
 
             // Get the suggestion analysis service for merge operation
-            $suggestionService = new \App\Plugins\Apps\MetaApps\Investigations\Services\SuggestionAnalysisService(
+            $suggestionService = new \NewSolari\Investigations\Services\SuggestionAnalysisService(
                 $this->getPlugin(),
                 $this->getAIService()
             );
