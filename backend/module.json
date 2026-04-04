@@ -1,0 +1,20 @@
+{
+    "id": "investigations",
+    "name": "Investigations",
+    "version": "1.0.0",
+    "description": "Visual investigation canvas with nodes, connections, timeline, and AI analysis",
+    "type": "meta-app",
+    "core_version": ">=1.0.0",
+    "dependencies": {
+        "core": ">=1.0.0"
+    },
+    "frontend": {
+        "navigation": {
+            "label": "Investigations",
+            "icon": "Search",
+            "section": "apps",
+            "path": "/apps/investigations",
+            "order": 3
+        }
+    }
+}
