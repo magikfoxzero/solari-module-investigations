@@ -9,17 +9,80 @@
         "newsolari/investigations": "*"
     },
     "repositories": [
-        { "type": "path", "url": "../backend", "options": { "symlink": true } },
-        { "type": "path", "url": "../../../webos/packages/core", "options": { "symlink": true } },
-        { "type": "path", "url": "../../ai-service/backend", "options": { "symlink": true } },
-        { "type": "path", "url": "../../people/backend", "options": { "symlink": true } },
-        { "type": "path", "url": "../../places/backend", "options": { "symlink": true } },
-        { "type": "path", "url": "../../entities/backend", "options": { "symlink": true } },
-        { "type": "path", "url": "../../events/backend", "options": { "symlink": true } },
-        { "type": "path", "url": "../../hypotheses/backend", "options": { "symlink": true } },
-        { "type": "path", "url": "../../motives/backend", "options": { "symlink": true } },
-        { "type": "path", "url": "../../inventory-objects/backend", "options": { "symlink": true } },
-        { "type": "path", "url": "../../notes/backend", "options": { "symlink": true } }
+        {
+            "type": "path",
+            "url": "../backend",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-core.git"
+        },
+        {
+            "type": "path",
+            "url": "../../ai-service/backend",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../people/backend",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../places/backend",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../entities/backend",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../events/backend",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../hypotheses/backend",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../motives/backend",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../inventory-objects/backend",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../../notes/backend",
+            "options": {
+                "symlink": true
+            }
+        }
     ],
     "autoload": {
         "psr-4": {
