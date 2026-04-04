@@ -6,16 +6,7 @@
         "php": "^8.2",
         "laravel/framework": "^12.0",
         "newsolari/core": "@dev",
-        "newsolari/investigations": "*",
-        "newsolari/ai-service": "@dev",
-        "newsolari/people": "@dev",
-        "newsolari/places": "@dev",
-        "newsolari/entities": "@dev",
-        "newsolari/events": "@dev",
-        "newsolari/hypotheses": "@dev",
-        "newsolari/motives": "@dev",
-        "newsolari/inventory-objects": "@dev",
-        "newsolari/notes": "@dev"
+        "newsolari/investigations": "*"
     },
     "repositories": [
         { "type": "path", "url": "../backend", "options": { "symlink": true } },
@@ -49,7 +40,16 @@
         "fakerphp/faker": "^1.23",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
-        "phpunit/phpunit": "^11.5.3"
+        "phpunit/phpunit": "^11.5.3",
+        "newsolari/ai-service": "@dev",
+        "newsolari/people": "@dev",
+        "newsolari/places": "@dev",
+        "newsolari/entities": "@dev",
+        "newsolari/events": "@dev",
+        "newsolari/hypotheses": "@dev",
+        "newsolari/motives": "@dev",
+        "newsolari/inventory-objects": "@dev",
+        "newsolari/notes": "@dev"
     },
     "autoload-dev": {
         "psr-4": {
