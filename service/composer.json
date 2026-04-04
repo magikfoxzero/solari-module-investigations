@@ -21,67 +21,40 @@
             "url": "https://github.com/magikfoxzero/solari-core.git"
         },
         {
-            "type": "path",
-            "url": "../../ai-service/backend",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-module-ai-service.git"
         },
         {
-            "type": "path",
-            "url": "../../people/backend",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-module-people.git"
         },
         {
-            "type": "path",
-            "url": "../../places/backend",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-module-places.git"
         },
         {
-            "type": "path",
-            "url": "../../entities/backend",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-module-entities.git"
         },
         {
-            "type": "path",
-            "url": "../../events/backend",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-module-events.git"
         },
         {
-            "type": "path",
-            "url": "../../hypotheses/backend",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-module-hypotheses.git"
         },
         {
-            "type": "path",
-            "url": "../../motives/backend",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-module-motives.git"
         },
         {
-            "type": "path",
-            "url": "../../inventory-objects/backend",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-module-inventory-objects.git"
         },
         {
-            "type": "path",
-            "url": "../../notes/backend",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/magikfoxzero/solari-module-notes.git"
         }
     ],
     "autoload": {

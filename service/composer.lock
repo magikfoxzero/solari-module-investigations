@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3e5e6f0a0c477a8f115bfbba29d48d5",
+    "content-hash": "4335a1924b0236d18dd4f5a29ff90ba7",
     "packages": [
         {
             "name": "brick/math",
@@ -7595,16 +7595,23 @@
         {
             "name": "newsolari/ai-service",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magikfoxzero/solari-module-ai-service.git",
+                "reference": "5148661d43d5bcc252004e1d638263a808a4fa75"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../ai-service/backend",
-                "reference": "896711bc42860f0422b18009d7b949c4804420be"
+                "type": "zip",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-ai-service/zipball/5148661d43d5bcc252004e1d638263a808a4fa75",
+                "reference": "5148661d43d5bcc252004e1d638263a808a4fa75",
+                "shasum": ""
             },
             "require": {
                 "anthropic-ai/sdk": "^0.4.0",
                 "newsolari/core": "^1.0 || @dev",
                 "php": "^8.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7615,36 +7622,44 @@
             },
             "autoload": {
                 "psr-4": {
-                    "NewSolari\\AIService\\": "src/"
+                    "NewSolari\\AIService\\": "backend/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NewSolari\\AIService\\Tests\\": "tests/"
+                    "NewSolari\\AIService\\Tests\\": "backend/tests/"
                 }
             },
             "license": [
                 "proprietary"
             ],
             "description": "AI Service module for SolariWebOS — Claude API integration",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/magikfoxzero/solari-module-ai-service/tree/main",
+                "issues": "https://github.com/magikfoxzero/solari-module-ai-service/issues"
+            },
+            "time": "2026-04-04T20:28:24+00:00"
         },
         {
             "name": "newsolari/entities",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magikfoxzero/solari-module-entities.git",
+                "reference": "c582c852db3050e4d54858c64a2a679813619b14"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../entities/backend",
-                "reference": "1d0882b0e40ca5cc076806a97590492ed69b4ffa"
+                "type": "zip",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-entities/zipball/c582c852db3050e4d54858c64a2a679813619b14",
+                "reference": "c582c852db3050e4d54858c64a2a679813619b14",
+                "shasum": ""
             },
             "require": {
                 "league/csv": "^9.14",
                 "newsolari/core": "^1.0 || @dev",
                 "php": "^8.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7655,36 +7670,44 @@
             },
             "autoload": {
                 "psr-4": {
-                    "NewSolari\\Entities\\": "src/"
+                    "NewSolari\\Entities\\": "backend/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NewSolari\\Entities\\Tests\\": "tests/"
+                    "NewSolari\\Entities\\Tests\\": "backend/tests/"
                 }
             },
             "license": [
                 "proprietary"
             ],
             "description": "Entities module for SolariWebOS",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/magikfoxzero/solari-module-entities/tree/main",
+                "issues": "https://github.com/magikfoxzero/solari-module-entities/issues"
+            },
+            "time": "2026-04-04T20:28:34+00:00"
         },
         {
             "name": "newsolari/events",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magikfoxzero/solari-module-events.git",
+                "reference": "faed8c7245fb5de02a91a81264e0ddb6f226fa67"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../events/backend",
-                "reference": "66853a4b5361fa22d4f436dfe7ad4cc0ccc25382"
+                "type": "zip",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-events/zipball/faed8c7245fb5de02a91a81264e0ddb6f226fa67",
+                "reference": "faed8c7245fb5de02a91a81264e0ddb6f226fa67",
+                "shasum": ""
             },
             "require": {
                 "league/csv": "^9.14",
                 "newsolari/core": "^1.0 || @dev",
                 "php": "^8.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7695,36 +7718,44 @@
             },
             "autoload": {
                 "psr-4": {
-                    "NewSolari\\Events\\": "src/"
+                    "NewSolari\\Events\\": "backend/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NewSolari\\Events\\Tests\\": "tests/"
+                    "NewSolari\\Events\\Tests\\": "backend/tests/"
                 }
             },
             "license": [
                 "proprietary"
             ],
             "description": "Events module for SolariWebOS",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/magikfoxzero/solari-module-events/tree/main",
+                "issues": "https://github.com/magikfoxzero/solari-module-events/issues"
+            },
+            "time": "2026-04-04T20:28:31+00:00"
         },
         {
             "name": "newsolari/hypotheses",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magikfoxzero/solari-module-hypotheses.git",
+                "reference": "28f4fe17a4e76684a3c4d29fb5dcb3eff2ef64b9"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../hypotheses/backend",
-                "reference": "1773b7c02be6f628ec1d67558edd87e88e09bc7e"
+                "type": "zip",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-hypotheses/zipball/28f4fe17a4e76684a3c4d29fb5dcb3eff2ef64b9",
+                "reference": "28f4fe17a4e76684a3c4d29fb5dcb3eff2ef64b9",
+                "shasum": ""
             },
             "require": {
                 "league/csv": "^9.14",
                 "newsolari/core": "^1.0 || @dev",
                 "php": "^8.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7735,36 +7766,44 @@
             },
             "autoload": {
                 "psr-4": {
-                    "NewSolari\\Hypotheses\\": "src/"
+                    "NewSolari\\Hypotheses\\": "backend/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NewSolari\\Hypotheses\\Tests\\": "tests/"
+                    "NewSolari\\Hypotheses\\Tests\\": "backend/tests/"
                 }
             },
             "license": [
                 "proprietary"
             ],
             "description": "Hypotheses module for SolariWebOS",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/magikfoxzero/solari-module-hypotheses/tree/main",
+                "issues": "https://github.com/magikfoxzero/solari-module-hypotheses/issues"
+            },
+            "time": "2026-04-04T20:28:35+00:00"
         },
         {
             "name": "newsolari/inventory-objects",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magikfoxzero/solari-module-inventory-objects.git",
+                "reference": "c27995964df0830146397f787f63607c7a5e7bdc"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../inventory-objects/backend",
-                "reference": "10f27112ab59adab678fb97caa1aba78d68e067e"
+                "type": "zip",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-inventory-objects/zipball/c27995964df0830146397f787f63607c7a5e7bdc",
+                "reference": "c27995964df0830146397f787f63607c7a5e7bdc",
+                "shasum": ""
             },
             "require": {
                 "league/csv": "^9.14",
                 "newsolari/core": "^1.0 || @dev",
                 "php": "^8.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7775,36 +7814,44 @@
             },
             "autoload": {
                 "psr-4": {
-                    "NewSolari\\InventoryObjects\\": "src/"
+                    "NewSolari\\InventoryObjects\\": "backend/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NewSolari\\InventoryObjects\\Tests\\": "tests/"
+                    "NewSolari\\InventoryObjects\\Tests\\": "backend/tests/"
                 }
             },
             "license": [
                 "proprietary"
             ],
             "description": "Inventory Objects module for SolariWebOS",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/magikfoxzero/solari-module-inventory-objects/tree/main",
+                "issues": "https://github.com/magikfoxzero/solari-module-inventory-objects/issues"
+            },
+            "time": "2026-04-04T20:28:36+00:00"
         },
         {
             "name": "newsolari/motives",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magikfoxzero/solari-module-motives.git",
+                "reference": "504de81eec4821aefe970240f6571ab33322e465"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../motives/backend",
-                "reference": "8fc6892cb8597af627b59606f8a702e5c0fc0fcc"
+                "type": "zip",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-motives/zipball/504de81eec4821aefe970240f6571ab33322e465",
+                "reference": "504de81eec4821aefe970240f6571ab33322e465",
+                "shasum": ""
             },
             "require": {
                 "league/csv": "^9.14",
                 "newsolari/core": "^1.0 || @dev",
                 "php": "^8.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7815,36 +7862,44 @@
             },
             "autoload": {
                 "psr-4": {
-                    "NewSolari\\Motives\\": "src/"
+                    "NewSolari\\Motives\\": "backend/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NewSolari\\Motives\\Tests\\": "tests/"
+                    "NewSolari\\Motives\\Tests\\": "backend/tests/"
                 }
             },
             "license": [
                 "proprietary"
             ],
             "description": "Motives module for SolariWebOS",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/magikfoxzero/solari-module-motives/tree/main",
+                "issues": "https://github.com/magikfoxzero/solari-module-motives/issues"
+            },
+            "time": "2026-04-04T20:28:36+00:00"
         },
         {
             "name": "newsolari/notes",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magikfoxzero/solari-module-notes.git",
+                "reference": "fb20c6a6d2d6e00ed5dc2eb40001b4daf99e7f35"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../notes/backend",
-                "reference": "6ca3a98124719810ae1c5822ce321c119aff6bff"
+                "type": "zip",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-notes/zipball/fb20c6a6d2d6e00ed5dc2eb40001b4daf99e7f35",
+                "reference": "fb20c6a6d2d6e00ed5dc2eb40001b4daf99e7f35",
+                "shasum": ""
             },
             "require": {
                 "league/csv": "^9.14",
                 "newsolari/core": "^1.0 || @dev",
                 "php": "^8.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7855,36 +7910,44 @@
             },
             "autoload": {
                 "psr-4": {
-                    "NewSolari\\Notes\\": "src/"
+                    "NewSolari\\Notes\\": "backend/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NewSolari\\Notes\\Tests\\": "tests/"
+                    "NewSolari\\Notes\\Tests\\": "backend/tests/"
                 }
             },
             "license": [
                 "proprietary"
             ],
             "description": "Notes module for SolariWebOS",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/magikfoxzero/solari-module-notes/tree/main",
+                "issues": "https://github.com/magikfoxzero/solari-module-notes/issues"
+            },
+            "time": "2026-04-04T20:28:37+00:00"
         },
         {
             "name": "newsolari/people",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magikfoxzero/solari-module-people.git",
+                "reference": "b8b49a24ea2b2332fe4b2140c922cf9d28f7c646"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../people/backend",
-                "reference": "6118e4935776c8fb7c3f6aff74f56aba6dc6e0a6"
+                "type": "zip",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-people/zipball/b8b49a24ea2b2332fe4b2140c922cf9d28f7c646",
+                "reference": "b8b49a24ea2b2332fe4b2140c922cf9d28f7c646",
+                "shasum": ""
             },
             "require": {
                 "league/csv": "^9.14",
                 "newsolari/core": "^1.0 || @dev",
                 "php": "^8.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7895,35 +7958,43 @@
             },
             "autoload": {
                 "psr-4": {
-                    "NewSolari\\People\\": "src/"
+                    "NewSolari\\People\\": "backend/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NewSolari\\People\\Tests\\": "tests/"
+                    "NewSolari\\People\\Tests\\": "backend/tests/"
                 }
             },
             "license": [
                 "proprietary"
             ],
             "description": "People module for SolariWebOS",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/magikfoxzero/solari-module-people/tree/main",
+                "issues": "https://github.com/magikfoxzero/solari-module-people/issues"
+            },
+            "time": "2026-04-04T20:28:30+00:00"
         },
         {
             "name": "newsolari/places",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magikfoxzero/solari-module-places.git",
+                "reference": "c88212b78ffcc26f79c0e8a0315249a16767881f"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../places/backend",
-                "reference": "4e801a7b007279d2e3906a02b5b008777bed9866"
+                "type": "zip",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-places/zipball/c88212b78ffcc26f79c0e8a0315249a16767881f",
+                "reference": "c88212b78ffcc26f79c0e8a0315249a16767881f",
+                "shasum": ""
             },
             "require": {
                 "newsolari/core": "^1.0 || @dev",
                 "php": "^8.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7934,22 +8005,23 @@
             },
             "autoload": {
                 "psr-4": {
-                    "NewSolari\\Places\\": "src/"
+                    "NewSolari\\Places\\": "backend/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "NewSolari\\Places\\Tests\\": "tests/"
+                    "NewSolari\\Places\\Tests\\": "backend/tests/"
                 }
             },
             "license": [
                 "proprietary"
             ],
             "description": "Places module for SolariWebOS",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/magikfoxzero/solari-module-places/tree/main",
+                "issues": "https://github.com/magikfoxzero/solari-module-places/issues"
+            },
+            "time": "2026-04-04T20:28:34+00:00"
         },
         {
             "name": "nikic/php-parser",
