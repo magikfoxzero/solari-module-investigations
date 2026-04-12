@@ -14,6 +14,7 @@ use NewSolari\Investigations\Events\NodeAdded;
 use NewSolari\Investigations\Events\NodeMoved;
 use NewSolari\Investigations\Events\NodeRemoved;
 use NewSolari\Investigations\Events\NodeUpdated;
+use NewSolari\Core\Identity\Models\IdentityUser;
 use NewSolari\Investigations\InvestigationsPlugin;
 use NewSolari\Investigations\Models\Investigation;
 use NewSolari\Investigations\Models\InvestigationConnection;
@@ -1725,5 +1726,54 @@ class InvestigationsController extends BaseController
         }
 
         return $entity;
+    }
+
+    /**
+     * Channel authorization callback — called by WebSocket service
+     * to verify whether a user can access an investigation canvas channel.
+     *
+     * Protected by service.token middleware (service-to-service auth).
+     */
+    public function channelAuth(Request $request): JsonResponse
+    {
+        try {
+            $request->validate([
+                'user_id' => 'required|string',
+                'partition_id' => 'required|string',
+                'resource_id' => 'required|string',
+            ]);
+
+            $userId = $request->input('user_id');
+            $partitionId = $request->input('partition_id');
+            $resourceId = $request->input('resource_id');
+
+            $investigation = Investigation::where('record_id', $resourceId)
+                ->where('partition_id', $partitionId)
+                ->first();
+
+            if (!$investigation) {
+                return response()->json(['authorized' => false]);
+            }
+
+            $user = IdentityUser::find($userId);
+            if (!$user) {
+                return response()->json(['authorized' => false]);
+            }
+
+            if ($investigation->canAccess($user, 'read')) {
+                return response()->json([
+                    'authorized' => true,
+                    'user_info' => ['id' => $userId, 'name' => $user->username ?? 'Unknown'],
+                ]);
+            }
+
+            return response()->json(['authorized' => false]);
+        } catch (\Exception $e) {
+            Log::error('InvestigationsController channelAuth error', [
+                'error' => $e->getMessage(),
+            ]);
+
+            return response()->json(['authorized' => false]);
+        }
     }
 }

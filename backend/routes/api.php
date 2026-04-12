@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use NewSolari\Investigations\Controllers\InvestigationsController;
 use NewSolari\Investigations\Controllers\InvestigationAIController;
 
+// Channel auth (called by WebSocket service for investigation.canvas.* channels)
+Route::middleware(['service.token'])
+    ->post('api/investigations/channel-auth', [InvestigationsController::class, 'channelAuth']);
+
 Route::middleware(['auth.api', 'module.enabled:investigations', 'partition.app:investigations-meta-app'])
     ->prefix('api/investigations')
     ->group(function () {
