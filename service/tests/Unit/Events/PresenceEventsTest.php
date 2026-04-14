@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Events;
 
-use NewSolari\Core\Identity\Models\IdentityPartition;
-use NewSolari\Core\Identity\Models\IdentityUser;
+use NewSolari\Identity\Models\IdentityPartition;
+use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Investigations\Events\CanvasStateUpdated;
 use NewSolari\Investigations\Events\UserCursorMoved;
 use NewSolari\Investigations\Events\UserJoinedCanvas;

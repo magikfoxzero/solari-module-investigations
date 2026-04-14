@@ -2,8 +2,8 @@
 
 namespace Tests\Unit;
 
-use NewSolari\Core\Identity\Models\IdentityPartition;
-use NewSolari\Core\Identity\Models\IdentityUser;
+use NewSolari\Identity\Models\IdentityPartition;
+use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Investigations\Models\Investigation;
 use NewSolari\Investigations\Models\InvestigationConnection;
 use NewSolari\Investigations\Models\InvestigationDrawing;
