@@ -2,7 +2,7 @@
 
 namespace NewSolari\Investigations;
 
-use NewSolari\Core\Identity\Models\IdentityUser;
+use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Investigations\Models\Investigation;
 use NewSolari\Investigations\Models\InvestigationConnection;
 use NewSolari\Core\Plugin\MetaAppBase;

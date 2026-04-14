@@ -2,7 +2,7 @@
 
 namespace NewSolari\Investigations\Events;
 
-use NewSolari\Core\Identity\Models\IdentityUser;
+use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Investigations\Models\InvestigationNode;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;

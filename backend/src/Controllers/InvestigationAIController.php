@@ -2,7 +2,7 @@
 
 namespace NewSolari\Investigations\Controllers;
 
-use NewSolari\Core\Identity\Models\IdentityUser;
+use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Investigations\InvestigationsPlugin;
 use NewSolari\Investigations\Models\Investigation;
 use NewSolari\AIService\Contracts\AIServiceInterface;

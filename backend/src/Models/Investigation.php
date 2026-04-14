@@ -3,7 +3,7 @@
 namespace NewSolari\Investigations\Models;
 
 use NewSolari\Core\Entity\BaseEntity;
-use NewSolari\Core\Identity\Models\IdentityUser;
+use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Core\Entity\Traits\HasUnifiedRelationships;
 use NewSolari\Core\Entity\Traits\Shareable;
 use NewSolari\Core\Entity\Traits\SoftDeletes;

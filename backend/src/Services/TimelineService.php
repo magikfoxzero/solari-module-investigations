@@ -2,7 +2,7 @@
 
 namespace NewSolari\Investigations\Services;
 
-use NewSolari\Core\Identity\Models\IdentityUser;
+use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Investigations\InvestigationsPlugin;
 use NewSolari\Investigations\Models\Investigation;
 use Carbon\Carbon;

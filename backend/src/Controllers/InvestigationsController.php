@@ -14,7 +14,7 @@ use NewSolari\Investigations\Events\NodeAdded;
 use NewSolari\Investigations\Events\NodeMoved;
 use NewSolari\Investigations\Events\NodeRemoved;
 use NewSolari\Investigations\Events\NodeUpdated;
-use NewSolari\Core\Identity\Models\IdentityUser;
+use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Investigations\InvestigationsPlugin;
 use NewSolari\Investigations\Models\Investigation;
 use NewSolari\Investigations\Models\InvestigationConnection;
@@ -99,7 +99,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -139,7 +139,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -182,7 +182,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -217,7 +217,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -267,7 +267,7 @@ class InvestigationsController extends BaseController
             Log::info('Investigation delete requested', ['investigation_id' => $id]);
 
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -308,7 +308,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -353,7 +353,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -392,7 +392,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -417,7 +417,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -458,7 +458,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -569,7 +569,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -643,7 +643,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -709,7 +709,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -821,7 +821,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -920,7 +920,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -985,7 +985,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -1057,7 +1057,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -1101,7 +1101,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -1158,7 +1158,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -1211,7 +1211,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -1294,7 +1294,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -1369,7 +1369,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -1435,7 +1435,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -1500,7 +1500,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 
@@ -1544,7 +1544,7 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Core\Identity\Models\IdentityUser) {
+            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
                 return $this->errorResponse('Authentication required', 401);
             }
 

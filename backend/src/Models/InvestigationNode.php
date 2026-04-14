@@ -3,7 +3,7 @@
 namespace NewSolari\Investigations\Models;
 
 use NewSolari\Core\Entity\BaseEntity;
-use NewSolari\Core\Identity\Models\EntityTypeRegistry;
+use NewSolari\Core\Entity\Models\EntityTypeRegistry;
 use NewSolari\Core\Entity\Traits\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
