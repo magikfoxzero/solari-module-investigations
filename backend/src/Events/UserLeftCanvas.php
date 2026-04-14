@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations\Events;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Investigations\Models\Investigation;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
@@ -16,9 +17,9 @@ class UserLeftCanvas implements ShouldBroadcast
 
     public Investigation $investigation;
 
-    public IdentityUser $user;
+    public IdentityUserContract $user;
 
-    public function __construct(Investigation $investigation, IdentityUser $user)
+    public function __construct(Investigation $investigation, IdentityUserContract $user)
     {
         $this->investigation = $investigation;
         $this->user = $user;

@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations\Events;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
@@ -17,9 +18,9 @@ class DrawingRemoved implements ShouldBroadcast
 
     public string $investigationId;
 
-    public IdentityUser $user;
+    public IdentityUserContract $user;
 
-    public function __construct(string $drawingId, string $investigationId, IdentityUser $user)
+    public function __construct(string $drawingId, string $investigationId, IdentityUserContract $user)
     {
         $this->drawingId = $drawingId;
         $this->investigationId = $investigationId;

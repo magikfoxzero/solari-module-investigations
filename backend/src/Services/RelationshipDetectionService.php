@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations\Services;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Core\Entity\Models\EntityRelationship;
 use NewSolari\Investigations\InvestigationsPlugin;
 use NewSolari\Investigations\Models\Investigation;
@@ -55,10 +56,10 @@ class RelationshipDetectionService
      * Find all relationships between entities currently on the canvas.
      *
      * @param Investigation $investigation The investigation to analyze
-     * @param IdentityUser $user The user for access filtering
+     * @param IdentityUserContract $user The user for access filtering
      * @return array Discovered relationships
      */
-    public function discoverCanvasRelationships(Investigation $investigation, IdentityUser $user): array
+    public function discoverCanvasRelationships(Investigation $investigation, IdentityUserContract $user): array
     {
         $visibleNodes = $this->plugin->getVisibleNodesForUser($investigation->nodes, $user);
         $relationships = [];
@@ -186,10 +187,10 @@ class RelationshipDetectionService
      * Suggest connections based on entity attributes (e.g., shared locations, dates).
      *
      * @param Investigation $investigation The investigation to analyze
-     * @param IdentityUser $user The user for access filtering
+     * @param IdentityUserContract $user The user for access filtering
      * @return array Suggested connections with reasons
      */
-    public function suggestConnections(Investigation $investigation, IdentityUser $user): array
+    public function suggestConnections(Investigation $investigation, IdentityUserContract $user): array
     {
         $visibleNodes = $this->plugin->getVisibleNodesForUser($investigation->nodes, $user);
         $suggestions = [];

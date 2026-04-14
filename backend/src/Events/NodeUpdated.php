@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations\Events;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Investigations\Models\InvestigationNode;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
@@ -16,9 +17,9 @@ class NodeUpdated implements ShouldBroadcast
 
     public InvestigationNode $node;
 
-    public IdentityUser $user;
+    public IdentityUserContract $user;
 
-    public function __construct(InvestigationNode $node, IdentityUser $user)
+    public function __construct(InvestigationNode $node, IdentityUserContract $user)
     {
         $this->node = $node;
         $this->user = $user;

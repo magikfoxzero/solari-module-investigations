@@ -4,6 +4,7 @@ namespace NewSolari\Investigations\Models;
 
 use NewSolari\Core\Entity\BaseEntity;
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Core\Entity\Traits\HasUnifiedRelationships;
 use NewSolari\Core\Entity\Traits\Shareable;
 use NewSolari\Core\Entity\Traits\SoftDeletes;
@@ -364,7 +365,7 @@ class Investigation extends BaseEntity
      * Check if a user can access this investigation.
      * Used by WebSocket channel authorization.
      */
-    public function canAccess(IdentityUser $user, string $action = 'read'): bool
+    public function canAccess(IdentityUserContract $user, string $action = 'read'): bool
     {
         // System admins can do anything
         if ($user->is_system_user) {

@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations\Events;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Investigations\Models\InvestigationConnection;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
@@ -17,9 +18,9 @@ class ConnectionAdded implements ShouldBroadcast
     // Named 'investigationConnection' to avoid conflict with Laravel's queue $connection lookup
     public InvestigationConnection $investigationConnection;
 
-    public IdentityUser $user;
+    public IdentityUserContract $user;
 
-    public function __construct(InvestigationConnection $investigationConnection, IdentityUser $user)
+    public function __construct(InvestigationConnection $investigationConnection, IdentityUserContract $user)
     {
         $this->investigationConnection = $investigationConnection;
         $this->user = $user;

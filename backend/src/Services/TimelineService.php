@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations\Services;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Investigations\InvestigationsPlugin;
 use NewSolari\Investigations\Models\Investigation;
 use Carbon\Carbon;
@@ -30,10 +31,10 @@ class TimelineService
      * Extract timeline events from an investigation's linked entities.
      *
      * @param Investigation $investigation The investigation to extract events from
-     * @param IdentityUser $user The user requesting the data (for access filtering)
+     * @param IdentityUserContract $user The user requesting the data (for access filtering)
      * @return array Timeline data including events, count, and date range
      */
-    public function extractTimeline(Investigation $investigation, IdentityUser $user): array
+    public function extractTimeline(Investigation $investigation, IdentityUserContract $user): array
     {
         $timelineDateFields = $this->plugin->getTimelineDateFields();
         $events = [];

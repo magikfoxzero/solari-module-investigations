@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations\Events;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Investigations\Models\InvestigationDrawing;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
@@ -16,9 +17,9 @@ class DrawingAdded implements ShouldBroadcast
 
     public InvestigationDrawing $drawing;
 
-    public IdentityUser $user;
+    public IdentityUserContract $user;
 
-    public function __construct(InvestigationDrawing $drawing, IdentityUser $user)
+    public function __construct(InvestigationDrawing $drawing, IdentityUserContract $user)
     {
         $this->drawing = $drawing;
         $this->user = $user;

@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations\Events;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
@@ -21,13 +22,13 @@ class UserCursorMoved implements ShouldBroadcast
 
     public string $investigationId;
 
-    public IdentityUser $user;
+    public IdentityUserContract $user;
 
     public float $x;
 
     public float $y;
 
-    public function __construct(string $investigationId, IdentityUser $user, float $x, float $y)
+    public function __construct(string $investigationId, IdentityUserContract $user, float $x, float $y)
     {
         $this->investigationId = $investigationId;
         $this->user = $user;

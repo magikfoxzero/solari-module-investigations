@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Investigations\Models\Investigation;
 use NewSolari\Investigations\Models\InvestigationConnection;
 use NewSolari\Core\Plugin\MetaAppBase;
@@ -275,7 +276,7 @@ class InvestigationsPlugin extends MetaAppBase
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function getInvestigationsQuery(IdentityUser $user, array $filters = [], bool $withRelations = false)
+    public function getInvestigationsQuery(IdentityUserContract $user, array $filters = [], bool $withRelations = false)
     {
         $query = $this->getContainerQuery($user, $filters);
 
@@ -296,7 +297,7 @@ class InvestigationsPlugin extends MetaAppBase
      * Get investigation statistics for the user.
      * Uses aggregate queries to avoid loading all records into memory.
      */
-    public function getStatistics(IdentityUser $user): array
+    public function getStatistics(IdentityUserContract $user): array
     {
         $baseQuery = $this->getContainerQuery($user);
 

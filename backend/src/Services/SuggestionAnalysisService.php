@@ -3,6 +3,7 @@
 namespace NewSolari\Investigations\Services;
 
 use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Core\Entity\Models\EntityRelationship;
 use NewSolari\Investigations\InvestigationsPlugin;
 use NewSolari\Investigations\Models\Investigation;
@@ -38,7 +39,7 @@ class SuggestionAnalysisService
      *
      * @return array{suggestions: array, summary: array}
      */
-    public function analyze(Investigation $investigation, IdentityUser $user): array
+    public function analyze(Investigation $investigation, IdentityUserContract $user): array
     {
         $investigation->load(['nodes', 'connections']);
 
