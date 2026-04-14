@@ -2552,12 +2552,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-ai-service.git",
-                "reference": "ebb2afd9e5925d8bfcd0e3dfc794b16694573bfa"
+                "reference": "c3b9e079b3578cdb609e22f2e2d80c361a56fd9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-ai-service/zipball/ebb2afd9e5925d8bfcd0e3dfc794b16694573bfa",
-                "reference": "ebb2afd9e5925d8bfcd0e3dfc794b16694573bfa",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-ai-service/zipball/c3b9e079b3578cdb609e22f2e2d80c361a56fd9a",
+                "reference": "c3b9e079b3578cdb609e22f2e2d80c361a56fd9a",
                 "shasum": ""
             },
             "require": {
@@ -2592,7 +2592,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-ai-service/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-ai-service/issues"
             },
-            "time": "2026-04-14T20:21:02+00:00"
+            "time": "2026-04-14T21:52:58+00:00"
         },
         {
             "name": "newsolari/core",
@@ -2651,12 +2651,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-identity.git",
-                "reference": "6215b5acafa0393f39a44af8bd3d396a200d03ee"
+                "reference": "b9975d00c8bd9566b1670bd9cb129ce6b3536042"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-identity/zipball/6215b5acafa0393f39a44af8bd3d396a200d03ee",
-                "reference": "6215b5acafa0393f39a44af8bd3d396a200d03ee",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-identity/zipball/b9975d00c8bd9566b1670bd9cb129ce6b3536042",
+                "reference": "b9975d00c8bd9566b1670bd9cb129ce6b3536042",
                 "shasum": ""
             },
             "require": {
@@ -2688,7 +2688,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-identity/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-identity/issues"
             },
-            "time": "2026-04-14T21:15:28+00:00"
+            "time": "2026-04-14T21:52:58+00:00"
         },
         {
             "name": "newsolari/investigations",
@@ -7771,12 +7771,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-entities.git",
-                "reference": "36ee0a8940e17edcd8aa34eb8bf6d15c5a577008"
+                "reference": "cb4cc763c25cc64811c4d01ba8479073ed2abcf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-entities/zipball/36ee0a8940e17edcd8aa34eb8bf6d15c5a577008",
-                "reference": "36ee0a8940e17edcd8aa34eb8bf6d15c5a577008",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-entities/zipball/cb4cc763c25cc64811c4d01ba8479073ed2abcf0",
+                "reference": "cb4cc763c25cc64811c4d01ba8479073ed2abcf0",
                 "shasum": ""
             },
             "require": {
@@ -7811,7 +7811,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-entities/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-entities/issues"
             },
-            "time": "2026-04-14T20:21:03+00:00"
+            "time": "2026-04-14T21:52:58+00:00"
         },
         {
             "name": "newsolari/events",
@@ -7819,12 +7819,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-events.git",
-                "reference": "262dbd63000ce8782bfe749dd26aeadcab9a1a69"
+                "reference": "9f67b0ac1271f30e44625865e31eba93f7bc3c4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-events/zipball/262dbd63000ce8782bfe749dd26aeadcab9a1a69",
-                "reference": "262dbd63000ce8782bfe749dd26aeadcab9a1a69",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-events/zipball/9f67b0ac1271f30e44625865e31eba93f7bc3c4c",
+                "reference": "9f67b0ac1271f30e44625865e31eba93f7bc3c4c",
                 "shasum": ""
             },
             "require": {
@@ -7859,7 +7859,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-events/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-events/issues"
             },
-            "time": "2026-04-14T20:21:03+00:00"
+            "time": "2026-04-14T21:52:58+00:00"
         },
         {
             "name": "newsolari/hypotheses",
@@ -7867,12 +7867,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-hypotheses.git",
-                "reference": "e605b8cd1e58ee5f4eb56b8039abd5a68f916864"
+                "reference": "0df3c5e77a63c7e82adc1d2534a8bdf9d0e6db22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-hypotheses/zipball/e605b8cd1e58ee5f4eb56b8039abd5a68f916864",
-                "reference": "e605b8cd1e58ee5f4eb56b8039abd5a68f916864",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-hypotheses/zipball/0df3c5e77a63c7e82adc1d2534a8bdf9d0e6db22",
+                "reference": "0df3c5e77a63c7e82adc1d2534a8bdf9d0e6db22",
                 "shasum": ""
             },
             "require": {
@@ -7907,7 +7907,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-hypotheses/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-hypotheses/issues"
             },
-            "time": "2026-04-14T20:21:03+00:00"
+            "time": "2026-04-14T21:52:58+00:00"
         },
         {
             "name": "newsolari/inventory-objects",
@@ -7915,12 +7915,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-inventory-objects.git",
-                "reference": "8b7a9483aff7227c1d2b8279b1f80b0ad243d582"
+                "reference": "24478c50f323cb085cc3b0a9045e42945d841198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-inventory-objects/zipball/8b7a9483aff7227c1d2b8279b1f80b0ad243d582",
-                "reference": "8b7a9483aff7227c1d2b8279b1f80b0ad243d582",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-inventory-objects/zipball/24478c50f323cb085cc3b0a9045e42945d841198",
+                "reference": "24478c50f323cb085cc3b0a9045e42945d841198",
                 "shasum": ""
             },
             "require": {
@@ -7955,7 +7955,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-inventory-objects/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-inventory-objects/issues"
             },
-            "time": "2026-04-14T20:21:03+00:00"
+            "time": "2026-04-14T21:52:58+00:00"
         },
         {
             "name": "newsolari/motives",
@@ -7963,12 +7963,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-motives.git",
-                "reference": "3e70921ff931392dd8b0e304dd69602203f29fb8"
+                "reference": "0a277de421dbb9cfb94f00e6bd12a94cac372c9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-motives/zipball/3e70921ff931392dd8b0e304dd69602203f29fb8",
-                "reference": "3e70921ff931392dd8b0e304dd69602203f29fb8",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-motives/zipball/0a277de421dbb9cfb94f00e6bd12a94cac372c9f",
+                "reference": "0a277de421dbb9cfb94f00e6bd12a94cac372c9f",
                 "shasum": ""
             },
             "require": {
@@ -8003,7 +8003,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-motives/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-motives/issues"
             },
-            "time": "2026-04-14T20:21:03+00:00"
+            "time": "2026-04-14T21:52:59+00:00"
         },
         {
             "name": "newsolari/notes",
@@ -8011,12 +8011,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-notes.git",
-                "reference": "fd3d4ebb95dd38e7b6ec50922d5c10ad9c78929c"
+                "reference": "adfd9eca224577553c36c8df1411792a625bc0b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-notes/zipball/fd3d4ebb95dd38e7b6ec50922d5c10ad9c78929c",
-                "reference": "fd3d4ebb95dd38e7b6ec50922d5c10ad9c78929c",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-notes/zipball/adfd9eca224577553c36c8df1411792a625bc0b9",
+                "reference": "adfd9eca224577553c36c8df1411792a625bc0b9",
                 "shasum": ""
             },
             "require": {
@@ -8051,7 +8051,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-notes/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-notes/issues"
             },
-            "time": "2026-04-14T20:21:03+00:00"
+            "time": "2026-04-14T21:52:59+00:00"
         },
         {
             "name": "newsolari/people",
@@ -8059,12 +8059,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-people.git",
-                "reference": "32dac74b54bf377d27f8df27a9360e98cf056aab"
+                "reference": "b500d14ceda2df6bb9d43d8f605e371b894b8482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-people/zipball/32dac74b54bf377d27f8df27a9360e98cf056aab",
-                "reference": "32dac74b54bf377d27f8df27a9360e98cf056aab",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-people/zipball/b500d14ceda2df6bb9d43d8f605e371b894b8482",
+                "reference": "b500d14ceda2df6bb9d43d8f605e371b894b8482",
                 "shasum": ""
             },
             "require": {
@@ -8099,7 +8099,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-people/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-people/issues"
             },
-            "time": "2026-04-14T20:21:03+00:00"
+            "time": "2026-04-14T21:52:59+00:00"
         },
         {
             "name": "newsolari/places",
@@ -8107,12 +8107,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magikfoxzero/solari-module-places.git",
-                "reference": "c0da6ff3e3e1b8c34196723b1d6e1c7b566add83"
+                "reference": "cffcb6d2edb512d6aa77ceb8842997d52cb8601d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magikfoxzero/solari-module-places/zipball/c0da6ff3e3e1b8c34196723b1d6e1c7b566add83",
-                "reference": "c0da6ff3e3e1b8c34196723b1d6e1c7b566add83",
+                "url": "https://api.github.com/repos/magikfoxzero/solari-module-places/zipball/cffcb6d2edb512d6aa77ceb8842997d52cb8601d",
+                "reference": "cffcb6d2edb512d6aa77ceb8842997d52cb8601d",
                 "shasum": ""
             },
             "require": {
@@ -8146,7 +8146,7 @@
                 "source": "https://github.com/magikfoxzero/solari-module-places/tree/main",
                 "issues": "https://github.com/magikfoxzero/solari-module-places/issues"
             },
-            "time": "2026-04-14T20:21:03+00:00"
+            "time": "2026-04-14T21:52:59+00:00"
         },
         {
             "name": "nikic/php-parser",
