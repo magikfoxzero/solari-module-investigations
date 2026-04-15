@@ -2,7 +2,7 @@
 
 namespace NewSolari\Investigations\Controllers;
 
-use NewSolari\Identity\Models\IdentityUser;
+use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Investigations\InvestigationsPlugin;
 use NewSolari\Investigations\Models\Investigation;
 use NewSolari\AIService\Contracts\AIServiceInterface;
@@ -44,14 +44,11 @@ class InvestigationAIController extends BaseController
     /**
      * Validate user and investigation access.
      *
-     * @return array{user: IdentityUser, investigation: Investigation}|JsonResponse
+     * @return array{user: IdentityUserContract, investigation: Investigation}|JsonResponse
      */
     protected function validateAccess(Request $request, string $investigationId): array|JsonResponse
     {
         $user = $this->getAuthenticatedUser($request);
-        if (!$user || !$user instanceof IdentityUser) {
-            return $this->errorResponse('Authentication required', 401);
-        }
 
         $plugin = $this->getPlugin();
         if (!$plugin->checkUserPermission($user, 'investigations.update')) {
