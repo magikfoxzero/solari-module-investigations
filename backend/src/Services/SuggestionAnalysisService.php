@@ -2,7 +2,6 @@
 
 namespace NewSolari\Investigations\Services;
 
-use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Core\Entity\Models\EntityRelationship;
 use NewSolari\Investigations\InvestigationsPlugin;
