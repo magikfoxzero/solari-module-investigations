@@ -99,9 +99,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $plugin = $this->getPlugin();
             if (!$plugin->checkUserPermission($user, 'investigations.read')) {
@@ -139,9 +136,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $plugin = $this->getPlugin();
             if (!$plugin->checkUserPermission($user, 'investigations.create')) {
@@ -182,9 +176,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::with(['nodes', 'connections', 'drawings', 'creator'])->find($id);
             if (!$investigation) {
@@ -217,9 +208,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($id);
             if (!$investigation) {
@@ -267,9 +255,6 @@ class InvestigationsController extends BaseController
             Log::info('Investigation delete requested', ['investigation_id' => $id]);
 
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($id);
             if (!$investigation) {
@@ -308,9 +293,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $plugin = $this->getPlugin();
             if (!$plugin->checkUserPermission($user, 'investigations.read')) {
@@ -353,9 +335,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $plugin = $this->getPlugin();
             if (!$plugin->checkUserPermission($user, 'investigations.export')) {
@@ -392,9 +371,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $plugin = $this->getPlugin();
             if (!$plugin->checkUserPermission($user, 'investigations.read')) {
@@ -417,9 +393,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($id);
             if (!$investigation) {
@@ -458,9 +431,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -569,9 +539,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -643,9 +610,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -709,9 +673,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -821,9 +782,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -920,9 +878,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -985,9 +940,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -1057,9 +1009,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -1101,9 +1050,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::with('nodes')->find($investigationId);
             if (!$investigation) {
@@ -1158,9 +1104,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::with('nodes')->find($investigationId);
             if (!$investigation) {
@@ -1211,9 +1154,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::with(['nodes', 'connections', 'drawings'])->find($investigationId);
             if (!$investigation) {
@@ -1294,9 +1234,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::with(['nodes', 'connections'])->find($investigationId);
             if (!$investigation) {
@@ -1369,9 +1306,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -1435,9 +1369,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -1500,9 +1431,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
@@ -1544,9 +1472,6 @@ class InvestigationsController extends BaseController
     {
         try {
             $user = $this->getAuthenticatedUser($request);
-            if (!$user || !$user instanceof \NewSolari\Identity\Models\IdentityUser) {
-                return $this->errorResponse('Authentication required', 401);
-            }
 
             $investigation = Investigation::find($investigationId);
             if (!$investigation) {
