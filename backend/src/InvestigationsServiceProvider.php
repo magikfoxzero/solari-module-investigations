@@ -25,6 +25,12 @@ class InvestigationsServiceProvider extends ServiceProvider
             app(ModuleRegistry::class)->register(app(InvestigationsModule::class));
         }
 
+        // Register with shareable type registry
+        if (app()->bound(\NewSolari\Core\Services\ShareableTypeRegistry::class)) {
+            app(\NewSolari\Core\Services\ShareableTypeRegistry::class)
+                ->register('investigations', \NewSolari\Investigations\Models\Investigation::class, 'investigation');
+        }
+
         // Load routes
         $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
 
