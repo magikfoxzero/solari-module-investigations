@@ -36,7 +36,7 @@ class InvestigationsServiceProvider extends ServiceProvider
             app(\NewSolari\Core\Services\ChannelRegistry::class)->register('investigation.canvas', [
                 'type' => 'presence',
                 'auth' => config('services.investigations.channel_auth_url', 'http://127.0.0.1:8153/api/investigations/channel-auth'),
-            ]);
+            ], 'investigations');
         }
 
         // Load routes
