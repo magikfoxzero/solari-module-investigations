@@ -31,6 +31,14 @@ class InvestigationsServiceProvider extends ServiceProvider
                 ->register('investigations', \NewSolari\Investigations\Models\Investigation::class, 'investigation');
         }
 
+        // Register WebSocket channels with the channel registry
+        if ($this->app->bound(\NewSolari\Core\Services\ChannelRegistry::class)) {
+            app(\NewSolari\Core\Services\ChannelRegistry::class)->register('investigation.canvas', [
+                'type' => 'presence',
+                'auth' => config('services.investigations.channel_auth_url', 'http://127.0.0.1:8153/api/investigations/channel-auth'),
+            ]);
+        }
+
         // Load routes
         $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
 
