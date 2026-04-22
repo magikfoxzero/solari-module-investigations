@@ -304,7 +304,7 @@ class InvestigationsController extends BaseController
             $filters = $request->only(['folder_id']);
 
             // Escape LIKE special characters to prevent pattern injection
-            $escapedQuery = str_replace(['%', '_'], ['\%', '\_'], $query);
+            $escapedQuery = str_replace(['\\', '%', '_'], ['\\\\', '\\%', '\\_'], $query);
             $investigations = $plugin->getInvestigationsQuery($user, $filters)
                 ->where(function ($q) use ($escapedQuery) {
                     $q->where('title', 'LIKE', '%' . $escapedQuery . '%')

@@ -5,6 +5,7 @@ namespace NewSolari\Investigations\Models;
 use NewSolari\Core\Entity\BaseEntity;
 use NewSolari\Identity\Models\IdentityUser;
 use NewSolari\Core\Contracts\IdentityUserContract;
+use NewSolari\Core\Entity\Traits\HasTags;
 use NewSolari\Core\Entity\Traits\HasUnifiedRelationships;
 use NewSolari\Core\Entity\Traits\Shareable;
 use NewSolari\Core\Entity\Traits\SoftDeletes;
@@ -28,6 +29,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Investigation extends BaseEntity
 {
     use HasUnifiedRelationships;
+    use HasTags;
     use Shareable;
     use SoftDeletes;
 

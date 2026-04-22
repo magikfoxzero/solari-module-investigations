@@ -6,6 +6,7 @@ use NewSolari\Core\Contracts\IdentityUserContract;
 use NewSolari\Investigations\Models\Investigation;
 use NewSolari\Investigations\Models\InvestigationConnection;
 use NewSolari\Core\Plugin\MetaAppBase;
+use NewSolari\Core\Support\ValidationRules;
 
 /**
  * Investigations Meta-App Plugin.
@@ -104,7 +105,7 @@ class InvestigationsPlugin extends MetaAppBase
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
             'status' => 'nullable|string|in:open,in_progress,on_hold,closed,archived',
-            'priority' => 'nullable|string|in:low,medium,high,critical',
+            'priority' => ValidationRules::priority('4-level'),
             'case_number' => 'nullable|string|max:100',
             'start_date' => 'nullable|date',
             'end_date' => 'nullable|date',
@@ -260,7 +261,7 @@ class InvestigationsPlugin extends MetaAppBase
     protected function applySearchFilter($query, string $searchTerm): void
     {
         // Escape LIKE special characters to prevent pattern injection
-        $escaped = str_replace(['%', '_'], ['\%', '\_'], $searchTerm);
+        $escaped = str_replace(['\\', '%', '_'], ['\\\\', '\\%', '\\_'], $searchTerm);
         $query->where(function ($q) use ($escaped) {
             $q->where('title', 'LIKE', '%' . $escaped . '%')
               ->orWhere('description', 'LIKE', '%' . $escaped . '%')
@@ -413,7 +414,7 @@ class InvestigationsPlugin extends MetaAppBase
             'to_node_id' => 'required|string|max:36|exists:investigation_nodes,record_id|different:from_node_id',
             'from_side' => "nullable|string|in:{$validAnchors}",
             'to_side' => "nullable|string|in:{$validAnchors}",
-            'style' => 'nullable|string|in:solid,dashed,dotted',
+            'style' => ValidationRules::lineStyle(),
             'path_type' => 'nullable|string|in:curved,straight,orthogonal',
             'color' => 'nullable|string|max:7|regex:/^#[a-fA-F0-9]{6}$/',
             'thickness' => 'nullable|numeric|min:0.5|max:10',
